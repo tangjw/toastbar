@@ -27,10 +27,10 @@ dependencies {
     implementation "androidx.appcompat:appcompat:1.7.0"
 }
 
-tasks.register('generateSourcesJar', Jar) {
+/*tasks.register('generateSourcesJar', Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier 'sources'
-}
+}*/
 
 publishing {
     publications {
@@ -40,15 +40,5 @@ publishing {
             artifactId = 'toastbar'
             version = '1.0.0'
         }
-        /*register<MavenPublication>("release") { // 注册一个名字为 release 的发布内容
-            groupId = GROUP_ID
-            artifactId = ARTIFACT_ID
-            version = VERSION
-
-            afterEvaluate { // 在所有的配置都完成之后执行
-                // 从当前 module 的 release 包中发布
-                from(components["release"])
-            }
-        }*/
     }
 }
