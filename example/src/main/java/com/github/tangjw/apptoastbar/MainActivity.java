@@ -8,7 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.github.tangjw.toastbar.ToastbarHelper;
+//import com.github.tangjw.toastbar.ToastbarHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        new ToastbarHelper(findViewById(R.id.main));
+//        new ToastbarHelper(findViewById(R.id.main));
+//        new JitPack()
     }
+
 }
