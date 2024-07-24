@@ -16,5 +16,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "toastbar"
 //include ':app'
-include ':example'
+//include ':example'
 include ':toastbar'
