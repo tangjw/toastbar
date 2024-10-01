@@ -121,7 +121,7 @@ public class Toastbar extends BaseTransientBottomBar<Toastbar> {
         });
     }
 
-    public void setLoading(boolean isMask) {
+    public void setLoading(boolean isMask, int color) {
         status = 1;
         view.post(() -> {
             getIconView().setVisibility(View.VISIBLE);
@@ -130,7 +130,7 @@ public class Toastbar extends BaseTransientBottomBar<Toastbar> {
             if (isMask) {
                 params.width = ViewGroup.LayoutParams.MATCH_PARENT;
                 params.height = ViewGroup.LayoutParams.MATCH_PARENT;
-                view.setBackgroundColor(Color.parseColor("#33000000"));
+                view.setBackgroundColor(color);
                 view.setLayoutParams(params);
             } else {
                 params.width = ViewGroup.LayoutParams.WRAP_CONTENT;
