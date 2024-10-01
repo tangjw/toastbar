@@ -79,7 +79,7 @@ public class ToastbarHelper {
         toastbar.show();
     }
 
-    private void showLoadingMsg(String message, boolean isMask, int colorMask, int duration) {
+    private void showLoadingMsg(String message, boolean isMask, int duration, int colorMask) {
         if (toastbar != null && toastbar.isShownOrQueued() && toastbar.getStatus() == 1) {
             toastbar.setText(message);
             toastbar.setDuration(duration);
