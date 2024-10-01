@@ -1,5 +1,6 @@
 package com.github.tangjw.toastbar;
 
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
@@ -30,6 +31,10 @@ public class ToastbarHelper {
 
     public void progress(String message) {
         this.progress(message, false, 0);
+    }
+
+    public void progress(String message, boolean isMask) {
+        this.progress(message, isMask, Color.parseColor("#33000000"));
     }
 
     public void progress(String message, boolean isMask, @ColorInt int colorMask) {
